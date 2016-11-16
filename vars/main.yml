@@ -1,0 +1,4 @@
+---
+# vars file for cloudwatch-monitoring
+cloud_watch_monitoring_path: /usr/bin
+cron_specs: {name: "Cloudwatch monitoring", minute: "*/5", hour: "*", job: "{{cloud_watch_monitoring_path}}/aws-scripts-mon/mon-put-instance-data.pl --disk-space-util --disk-path=/mnt/data --from-cron --aws-access-key-id=AWS_KEY --aws-secret-key=AWS_SECRET_KEY"}
