@@ -31,7 +31,7 @@ galaxy_info:
   # the ones that apply to your role. If you don't see your
   # platform on this list, let us know and we'll get it added!
   #
-  #platforms:
+  platforms:
   #- name: OpenBSD
   #  versions:
   #  - all
@@ -118,9 +118,9 @@ galaxy_info:
   #  - 9.1
   #  - 9.2
   #  - 9.3
-  #- name: Ubuntu
-  #  versions:
-  #  - all
+  - name: Ubuntu
+    versions:
+    - all
   #  - lucid
   #  - maverick
   #  - natty
@@ -134,9 +134,9 @@ galaxy_info:
   #  - vivid
   #  - wily
   #  - xenial
-  #- name: Debian
-  #  versions:
-  #  - all
+  - name: Debian
+    versions:
+    - all
   #  - etch
   #  - jessie
   #  - lenny
@@ -158,9 +158,9 @@ galaxy_info:
   #  versions:
   #  - all
   #  - any
-  #- name: opensuse
-  #  versions:
-  #  - all
+  - name: opensuse
+    versions:
+    - all
   #  - 12.1
   #  - 12.2
   #  - 12.3
@@ -195,7 +195,11 @@ galaxy_info:
   #  - all
   #  - Any
 
-  galaxy_tags: []
+  galaxy_tags:
+  - CloudWatch
+  - aws-monitoring
+  - AWS
+  - monitoring
     # List tags for your role here, one per line. A tag is
     # a keyword that describes and categorizes the role.
     # Users find roles by searching for tags. Be sure to
