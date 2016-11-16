@@ -197,7 +197,6 @@ galaxy_info:
 
   galaxy_tags:
   - CloudWatch
-  - aws-monitoring
   - AWS
   - monitoring
     # List tags for your role here, one per line. A tag is
