@@ -1,4 +1,5 @@
 ---
+
 - stat: path={{cloud_watch_monitoring_path}}/aws-scripts-mon
   register: scripts_dir
 
