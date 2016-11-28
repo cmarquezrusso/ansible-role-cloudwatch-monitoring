@@ -22,6 +22,7 @@ How To
 
 Role Variables
 --------------
+Take a look into `cloudwatch-monitoring/defaults` for an example file
 
 - cloud_watch_monitoring_path: /opt
 - path: /
