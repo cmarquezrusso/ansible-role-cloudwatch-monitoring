@@ -2,7 +2,7 @@
 
 - name: "Remove existing crons"
   cron: name="{{item.name}}" state=absent
-  file: cloudwatch-metrics
+  cron_file: cloudwatch-metrics
   user: root
   with_items: "{{ cron_specs }}"
   ignore_errors: True
@@ -10,7 +10,7 @@
 
 - name: "Setup crons"
   cron: name="{{item.name}}" minute="{{item.minute}}" hour="{{item.hour}}" job="{{item.job}}"
-  file: cloudwatch-metrics
+  cron_file: cloudwatch-metrics
   user: root
   with_items: "{{ cron_specs }}"
   no_log: True
