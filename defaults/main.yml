@@ -3,6 +3,7 @@
 
 cloud_watch_monitoring_path: /opt
 path: /
+cron_user: root
 cron_specs:
 - {
     name: "Cloudwatch monitoring",
