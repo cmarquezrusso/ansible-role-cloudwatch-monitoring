@@ -4,7 +4,6 @@
   cron: name="{{item.name}}" state=absent cron_file=cloudwatch-metrics
   with_items: "{{ cron_specs }}"
   ignore_errors: True
-  no_log: True
 
 - name: "Setup crons"
   cron:
@@ -15,4 +14,5 @@
     cron_file: cloudwatch-metrics
     user: "{{ cron_user }}"
   with_items: "{{ cron_specs }}"
-  no_log: True
+  become: true
+  become_user: "{{ cron_user }}"
