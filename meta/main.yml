@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: cloudwatch_monitoring
   author: Cristian Marquez Russo
   description: Amazon Cloudwatch Monitoring
   company: Clearpoint
