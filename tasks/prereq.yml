@@ -2,7 +2,7 @@
 
 - name: "Install apt packages"
   apt: name={{ item }} state=present
-  with_items: ['unzip','libwww-perl',  'libdatetime-perl']
+  with_items: ['unzip', 'libwww-perl', 'libdatetime-perl']
   when: ansible_os_family == "Debian"
   become: True
   become_method: sudo
