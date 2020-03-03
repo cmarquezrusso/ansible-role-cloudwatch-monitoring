@@ -6,7 +6,7 @@
 
 - name: Setup Amazon CloudWatch Monitoring Scr
   import_tasks: prereq.yml
-  when: scripts_dir.stat.exists == False
+  when: not scripts_dir.stat.exists
 
 - name: Setup Cron
   import_tasks: cron_setup.yml
