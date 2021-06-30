@@ -1,6 +1,6 @@
 ansible-role-cloudwatch-monitoring
 =========
-[![Build Status](https://travis-ci.com/cristian04/ansible-role-cloudwatch-monitoring.svg?branch=master)](https://travis-ci.com/cristian04/ansible-role-cloudwatch-monitoring)
+[![Build Status](https://travis-ci.com/mergermarket/ansible-role-cloudwatch-monitoring.svg?branch=master)](https://travis-ci.com/mergermarket/ansible-role-cloudwatch-monitoring)
 
 This role install the latest AWS CloudWatch monitoring.
 
