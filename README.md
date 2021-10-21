@@ -1,6 +1,6 @@
 ansible-role-cloudwatch-monitoring
 =========
-[![Build Status](https://travis-ci.com/mergermarket/ansible-role-cloudwatch-monitoring.svg?branch=master)](https://travis-ci.com/mergermarket/ansible-role-cloudwatch-monitoring)
+[![Deploy to Ansible Galaxy](https://github.com/mergermarket/ansible-role-cloudwatch-monitoring/actions/workflows/main.yml/badge.svg)](https://github.com/mergermarket/ansible-role-cloudwatch-monitoring/actions/workflows/main.yml)
 
 This role install the latest AWS CloudWatch monitoring.
 
