@@ -21,12 +21,7 @@ jobs:
           packages: |
             ansible
             ansible-lint
-            molecule
-            molecule-docker
-            testinfra
             docker
-            flake8
-            yamllint
       - run: ansible --version
       - run: printf '[defaults]\nroles_path=../' >ansible.cfg
       - run: ansible-playbook tests/test.yml -i tests/inventory --syntax-check
