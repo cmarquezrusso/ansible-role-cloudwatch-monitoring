@@ -8,8 +8,8 @@
   become_method: sudo
 
 - name: "Install yum packages"
-  ansible.builtin.dnf: name={{ item }} state=present
-  with_items: ['unzip', 'perl-Switch', 'perl-DateTime', 'perl-Digest-SHA', 'perl-Sys-Syslog', 'perl-LWP-Protocol-https']
+  ansible.builtin.dnf:
+    name: ['unzip', 'perl-Switch', 'perl-DateTime', 'perl-Digest-SHA', 'perl-Sys-Syslog', 'perl-LWP-Protocol-https' , 'cronie']
   when: ansible_os_family == "RedHat"
   become: True
   become_method: sudo
