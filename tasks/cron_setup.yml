@@ -1,12 +1,12 @@
 ---
 
 - name: "Remove existing crons"
-  cron: name="{{ item.name }}" state=absent cron_file=cloudwatch-metrics
+  ansible.builtin.cron: name="{{ item.name }}" state=absent cron_file=cloudwatch-metrics
   with_items: "{{ cron_specs }}"
   ignore_errors: True
 
 - name: "Setup crons"
-  cron:
+  ansible.builtin.cron:
     name: "{{ item.name }}"
     minute: "{{ item.minute }}"
     hour: "{{ item.hour }}"
